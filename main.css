@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&display=swap');
+:root {
+    --red: hsl(0, 100%, 68%);
+    --very-dark-blue: hsl(230, 29%, 20%);
+    --dark-grayish-blue: hsl(230, 11%, 40%);
+    --grayish-blue: hsl(231, 7%, 65%);
+    --light-grayish-blue: hsl(207, 33%, 95%);
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+body {
+    font-family: 'Barlow', sans-serif;
+}
+
+h1, h2, h3, a {
+    font-family: 'Barlow Condensed', sans-serif;
+} 
+
+main, nav {
+    display: flex;
+    justify-content: space-between;
+    
+}
+nav {
+    width: 80%;
+    margin: 30px auto 0;
+    align-items: center;
+}
+main {
+    margin: 80px auto 50px;
+}
+.hero-text, .hero {
+    flex: 1;
+}
+li {
+    display: inline-block;
+    list-style-type: none;
+}
+li a {
+    margin-left: 40px;
+    font-weight: 700;
+    font-size: 1em;
+    padding: 10px;
+    color: var(--very-dark-blue);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.unique a {
+    margin-left: 80px;
+    list-style-type: unset;
+    color: var(--grayish-blue);
+}
+li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.hero {
+    overflow: hidden;
+}
+.hero img {
+    position: relative;
+    left: -35px;
+}
+.hero-text {
+    justify-self: center;
+    margin: 50px 0 0 10%;
+    width: 50%;
+}
+h5 {
+    text-transform: uppercase;
+    color: var(--grayish-blue);
+    letter-spacing: 3px;
+    font-weight: 400;
+}
+h5 span {
+    background-color: var(--very-dark-blue);
+    display: inline-block;
+    padding: 7px 15px;
+    border-radius: 15px;
+    color: var(--light-grayish-blue);
+    margin-right: 15px;
+}
+h1 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 3em;
+    margin: 20px 0 30px;
+}
+
+h3 {
+    color: var(--dark-grayish-blue);
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+button {
+    color: var(--light-grayish-blue);
+    background-color: var(--red);
+    padding: 15px 20px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+}
+.schedule h5 {
+    display: inline-block;
+    margin-left: 25px;
+}
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 49%;
+    height: 50%;
+    background-color: var(--light-grayish-blue);
+    border-bottom-left-radius: 50px;
+    z-index: -1;
+}
+
+@media screen and (max-width: 1270px) {
+    html {
+        font-size: 16px;
+    }
+    main {
+        margin: 50px auto;
+    }
+}
