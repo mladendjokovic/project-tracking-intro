@@ -92,6 +92,7 @@ h3 {
     font-size: 14px;
     letter-spacing: 4px;
     font-weight: 400;
+    white-space: nowrap;
 }
 h3 span {
     background-color: var(--very-dark-blue);
